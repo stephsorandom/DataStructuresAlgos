@@ -73,3 +73,80 @@ Rank: 5
 
 
 ## Problem 3 
+1. Since Big O tells us the complexity of an algorithm, this is essential if you want to judge how your business will scale. If you have a big website and expect lots of traffic, you need to be able to handle all user request in a quick and efficient manner. Managing scalability properly will reduce server cost in the end.
+2. Knowing how efficient your code will preform/process data, can help you to determine the best algorithm to use in tackling a problem, and will also help you become a better software engineer by improving your ability to refactor code and think of things on a larger scale. Thus helping us improve our coding skills. 
+3. When working in a team environment you want to make sure you are using the correct types and structures to solve specific problems. During the hiring process companies use DS&A style coding exercises to test a candidates knowledge in this. 
+
+## Problem 4
+
+Soley depending on a time method such as performance.now(), to measure your time and space complexity is not recommended. Performance.now() is dependant on a few factors, so every one will get a slightly different result when comparing the same algorithm. Depending on your CPU, RAM, or what you have running on your computer locally can all directly affect the result of performance.now() by resulting in different run times. 
+
+## Problem 5
+    - Total Time Complexity: 
+        O(1) + O(n) + O(n) + O(n^2)
+    - Consolidated Time Complexity: 
+        O(n^2)
+
+
+## Problem 6
+    - Total Time Complexity: 
+        O(1) + O(n) + O(1) + O(n^3)
+    - Consolidated Time Complexity: 
+        O(n^3)
+
+## Problem 7
+We ignore constants when determining time complexity because constants are ignorable, at the end of it all you will always have to depend on the worst case performer. Engineers want to examine the fundamental properties of each algorithm, knowing the expected outcome of each alorithm type.  This knowledge is then used to decide which algorithm is ideal for a specific type of proble on the greater scale.
+
+If you were working with multiple programmers from extensive backgrounds, knowing the fundamentals of each DSA type will be extremely beneficial because you do not have to worry about the technicalities such as: the amount of data being used (whether small or large), or the different programming languages that can potentially be used to write an algorithm, which can directly affect runtime and space complexity. 
+
+Dropping the constants gives a clear answer to what Big O you will be dealing with. 
+
+## Problem 8 
+The Space Complexity of an algorithm is the total amount of space taken by the algorithm/program to full execute, with respect to the input size. 
+
+Space Complexity is important in the real world because, you never want to execute a function or process that will exceed the amount of space the system has. 
+
+## Problem 9
+    Space Complexity of each Data Type: 
+        - Boolean : Constant 
+        - Undefined : Constant
+        - Null : Constant
+        - Numbers : Constant
+        - String : Linear
+        - Array : Linear
+        - Object: Linear
+
+## Problem 10
+* When to use an Array:
+    - When you need fast access to elements
+    - Data needs to be in order
+
+* When to use an Object: 
+    - Data does not need to be in order
+    - Don't need to necessarily access the elements quickly
+
+## Problem 11
+ * Object methods Time Complexity: 
+    - inserting: Constant O(1)
+    - removing: Constant O(1)
+    - searching 1: Constant O(1) -> because hasOwnProperty
+    - searching 2: Linear O(n) -> because searching for a key value
+    - accessing: Constant O(1)
+    - retrieving keys: Linear O(n)
+    - retrieving values: Linear O(n)
+
+## Problem 12 
+ * Array methods Time Complexity: 
+    - inserting 1: Linear / Constant
+    - inserting 2: Linear / Constant
+    - removing 1: Linear / Constant
+    - removing 2: Linear / Constant
+    - searching 1: Linear
+    - searching 2: Linear
+    - retrieving: Constant
+    - method 1: 
+    - method 2: 
+    - method 3: 
+    - method 4: 
+    - method 5: 
+    - method 6: 
