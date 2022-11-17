@@ -1,1 +1,1 @@
-# DSA_Coursework
+# DataStructuresAlgos
