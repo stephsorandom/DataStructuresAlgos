@@ -109,12 +109,12 @@ Space Complexity is important in the real world because, you never want to execu
 
 ## Problem 9
     Space Complexity of each Data Type: 
-        - Boolean : Constant 
-        - Undefined : Constant
-        - Null : Constant
-        - Numbers : Constant
-        - String : Linear
-        - Array : Linear
+        - Boolean: Constant 
+        - Undefined: Constant
+        - Null: Constant
+        - Numbers: Constant
+        - String: Linear
+        - Array: Linear
         - Object: Linear
 
 ## Problem 10
