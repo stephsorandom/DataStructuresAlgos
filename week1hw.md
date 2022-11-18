@@ -2,7 +2,8 @@
 
 ## Problem 1
 
-Big O Notation is best described as: the run time and amount of memory used to execute an algorithm, by measuring the time it takes to run your algorithm as the input grows. Big O Notation calculates the worst-case scenario, which inturn, shows the scalability of your program and helps developers see where there are opportunities to grow. 
+Big O Notation can be described as: amount of work the CPU has to do (time complexity) as the input size grows towards infinity. Big O Notation calculates the worst-case scenario, which inturn, shows the scalability of your program and helps developers see where there are opportunities to grow. 
+
 
 ## Problem 2
 
@@ -108,12 +109,12 @@ Space Complexity is important in the real world because, you never want to execu
 
 ## Problem 9
     Space Complexity of each Data Type: 
-        - Boolean : Constant 
-        - Undefined : Constant
-        - Null : Constant
-        - Numbers : Constant
-        - String : Linear
-        - Array : Linear
+        - Boolean: Constant 
+        - Undefined: Constant
+        - Null: Constant
+        - Numbers: Constant
+        - String: Linear
+        - Array: Linear
         - Object: Linear
 
 ## Problem 10
@@ -137,16 +138,57 @@ Space Complexity is important in the real world because, you never want to execu
 
 ## Problem 12 
  * Array methods Time Complexity: 
-    - inserting 1: Linear / Constant
-    - inserting 2: Linear / Constant
-    - removing 1: Linear / Constant
-    - removing 2: Linear / Constant
-    - searching 1: Linear
-    - searching 2: Linear
-    - retrieving: Constant
-    - method 1: 
-    - method 2: 
-    - method 3: 
-    - method 4: 
-    - method 5: 
-    - method 6: 
+    - inserting 1: .push() -> Constant O(1)
+    - inserting 2: .unshift() -> Linear O(n)
+    - removing 1: .pop() -> Constant O(1)
+    - removing 2: .shift() -> Linear O(n)
+    - searching 1: .find() -> Linear O(n)
+    - searching 2: forloop -> Linear O(n) 
+    - retrieving: getNumber ->  Constant O(n) - method 1: .map() -> Linear O(n)
+    - method 2: .splice() -> Linear O(n)
+    - method 3: .reduce() -> Linear O(n)
+    - method 4: loop -> Linear O(n)
+    - method 5: .join('') -> Linear O(n)
+    - method 6: .reverse() -> Linear O(n)
+
+## Problem 13
+
+### Problem 1 
+* Time Complexity: 
+* Space Complexity:  
+
+### Problem 2 
+* Time Complexity: 
+* Space Complexity:  
+
+### Problem 3 
+* Time Complexity: 
+* Space Complexity:  
+
+### Problem 4
+* Time Complexity: 
+* Space Complexity:  
+
+### Problem 5
+* Time Complexity: 
+* Space Complexity:  
+
+### Problem 6
+* Time Complexity: 
+* Space Complexity:  
+
+### Problem 7
+* Time Complexity: 
+* Space Complexity:  
+
+### Problem 8
+* Time Complexity: 
+* Space Complexity:  
+
+### Problem 9
+* Time Complexity: 
+* Space Complexity:
+  
+### Problem 10
+* Time Complexity: 
+* Space Complexity:  
