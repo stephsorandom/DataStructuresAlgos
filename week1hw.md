@@ -160,7 +160,7 @@ Space Complexity is important in the real world because, you never want to execu
   - removing 1: .pop() -> Constant O(1)
   - removing 2: .shift() -> Linear O(n)
   - searching 1: .find() -> Linear O(n)
-  - searching 2: forloop -> Linear O(n) ... ???
+  - searching 2: forloop -> Linear O(n)
   - retrieving: getNumber -> Constant O(n)
   - method 1: .map() -> Linear O(n)
   - method 2: .splice() -> Linear O(n)
@@ -184,10 +184,10 @@ function findFirstIndexOfNumber(number, array) {
 }
 ```
 
-- Time Complexity: O(n) ... ???? O(n^2)
-- Space Complexity: Constant
-  -The TC for this function is Linear, because you are iterating through the entire array until you find the number you desire. So depending on the length of the array,
-  SC is constant, because this returns an integer
+- Time Complexity: O(n^2)
+  - The TC for this function is quadratic, because you are iterating through the entire array until you find the number you desire and return it, else if you don't find that number return -1 result.
+- Space Complexity: O(1)
+  - SC is constant, because this returns an integer
 
 ### Problem 2
 
@@ -203,16 +203,15 @@ function findEachIndexOfNumber(number, array) {
 }
 ```
 
-- Time Complexity: O(n)
-- Space Complexity: Linear
-  -This function has a TC of Linear, because forEach + .push() => O(n)+O(1) => O(n)
-  SC is linear, because it returns an array of elements.
+- Time Complexity: O(n^2)
+  - This function has a TC of quadratic, because you have a nested loop with forEach and If statment, and then you push result. But worstcase scenario is O(n^2).
+- Space Complexity: O(n)
+  - SC is linear, because it returns an array of elements.
 
 ### Problem 3
 
 ```js
 const array = [36, 14, 1, 7, 21];
-
 function higherOrLower(array) {
     if (array[array.length -1 ] > array[0]) {
         return "Higher";
@@ -221,24 +220,24 @@ function higherOrLower(array) {
     else {
         return "Neither";
     }
-
    }
 }
 ```
 
 - Time Complexity: O(n)
-- Space Complexity:  
-  -O(n) + O(n) + O(n) = 3 O(n) ->>> O(n)
-  The if else statements, regardless of how many there are, are still directly dependant on the size of the input.
+  - O(n) + O(n) + O(n) = 3 O(n) ->>> O(n)
+    The if else statements, regardless of how many there are, are still directly dependant on the size of the input.
+- Space Complexity: O(n)
+  - SC is linear, because you return a string.
 
 ### Problem 4
 
 ```js
 const array = [1, 2, 3, 4, 5, 6, 7, 8];
-
 function determineSumOfSequentialArray(array) {
   let sum = 0;
   for (let i = 0; i < array.length; i++) {
+    //O(n)
     sum += array[i];
   }
   return sum;
@@ -246,22 +245,25 @@ function determineSumOfSequentialArray(array) {
 ```
 
 - Time Complexity: O(n)
-- Space Complexity:  
-  -Loop + sum => O(n) + O(1) ---> O(n). TC is Linear because you are going through the entire array and adding the sum of each [i].
+  - O(n) + O(1) ---> O(n). TC is Linear because you are going through the entire array and adding the sum of each [i].
+- Space Complexity: O(1)
+  - SC is constant, you are returning an integer.
 
 ### Problem 5
 
 ```js
 const array = [1, 2, 3, 4, 5, 6, 7, 8];
-
 function determineSumOfSequentialArray(array) {
   return (array.length * (array.length + 1)) / 2;
 }
 ```
 
-- Time Complexity: O(1) .... ????? O(n)
-- Space Complexity:  
-  -I think Constant because you add +1 to length then divide by 2 and multiply....but always the same amount of steps
+- Time Complexity: O(1)
+
+* Constant TC because you add +1 to length then divide by 2 and multiply....but always the same amount of steps, no matter the size of input.
+
+- Space Complexity: O(1)
+  - Constant because you return an integer.
 
 ### Problem 6
 
@@ -287,15 +289,16 @@ function searchSortedArray(
 }
 ```
 
-- Time Complexity:
-- Space Complexity:
+- Time Complexity: O(n^2) ??
+  - Quadratic TC ? because of all the if else statements.
+- Space Complexity: O(n)
+  - Linear SC, because return an integer.
 
 ### Problem 7
 
 ```js
 const array1 = [3, 7, 9, 12, 15, 18, 32];
 const array2 = [3, 3, 7, 41, 76];
-
 function compareArrays(array1, array2) {
   let arrayOfPairs = [];
   array1.forEach(function (e, i) {
@@ -309,8 +312,10 @@ function compareArrays(array1, array2) {
 }
 ```
 
-- Time Complexity:
-- Space Complexity:
+- Time Complexity: O(n^2)
+  - O(n^2) + O(n^2) + O(1) = 2O(n^2) + O(1) -> O(n^2). Nested forEach loops
+- Space Complexity: O(n)
+  - SC is linear, because it returns an array
 
 ### Problem 8
 
@@ -336,8 +341,10 @@ function sortByValue(array) {
 }
 ```
 
-- Time Complexity:
-- Space Complexity:
+- Time Complexity: O(n^2)
+  - Quadratic TC, you have nested loops, and function within a function.
+- Space Complexity: O(n)
+  - Linear SC, because you return an array.
 
 ### Problem 9
 
@@ -353,9 +360,10 @@ function returnDupes(array, array2) {
 }
 ```
 
-- Time Complexity: O(n) ... ?? O(n^2)
-- Space Complexity:
-  -O(n) + O(logn) --> O(n). Linear TC because you loop through the array and forEach element if it passes the parameter, you push to new array. So you can skip elements depending if they pass the requirements or not.
+- Time Complexity: O(n^2)
+  - Quadratic TC because you perform nested loops with the forEach and if statement.
+- Space Complexity: O(n)
+  - SP is linear, because you return an array.
 
 ### Problem 10
 
@@ -371,5 +379,7 @@ function sumFilteredData(array) {
 }
 ```
 
-- Time Complexity:
-- Space Complexity:
+- Time Complexity: O(n)
+  - O(n) + O(mn) -> 2O(n) = O(n)
+- Space Complexity: O(1)
+  - SP is constant, because integer is returned.
