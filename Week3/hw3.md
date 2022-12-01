@@ -12,9 +12,9 @@ const solution = (nums) => {
     freqCount1[int] = freqCount1[int] + 1 || 1;
   }
 
-    let maxCount = 0;
-    let mostNum = null;
-  
+  let maxCount = 0;
+  let mostNum = null;
+
   for (let key in freqCount1) {
     if (freqCount1[key] > maxCount) {
       maxCount = freqCount1[key];
@@ -23,5 +23,27 @@ const solution = (nums) => {
   }
 
   return mostNum;
+};
+```
+
+## Problem 2 - Divide and Conquer Pattern
+
+```js
+const binaryIterativeSearch = (nums, target) => {
+  let start = 0;
+  let end = nums.length - 1;
+
+  while (start < end) {
+    let mid = Math.floor((start + end) / 2);
+
+    if (nums[mid] === target) {
+      return mid;
+    } else if (nums[mid] < target) {
+      start = mid + 1;
+    } else {
+      end = mid - 1;
+    }
+  }
+  return -1;
 };
 ```
