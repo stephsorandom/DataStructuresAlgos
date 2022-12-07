@@ -34,3 +34,20 @@ const capitalizeAllLetters = (array) => {
 
 console.log(capitalizeAllLetters(['stePhaniE', 'MitcHelL']));
 ```
+
+## Problem 3
+
+```js
+function factorial(x) {
+  let result = 1;
+  if (x < 0) {
+    return 1;
+  } else {
+    for (let i = 1; i <= x; i++) {
+      result = result * i;
+    }
+  }
+  return result;
+}
+console.log(factorial(4));
+```
