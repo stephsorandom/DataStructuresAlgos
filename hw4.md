@@ -18,3 +18,19 @@ const flatTheArray = (arr) => {
 
 console.log(flatTheArray([1, 2, 3, [4, 5]]));
 ```
+
+## Problem 2 - Recursion
+
+```js
+const capitalizeAllLetters = (array) => {
+  let upper = [];
+
+  words.forEach((word) => {
+    upper.push(word.toUpperCase());
+  });
+
+  return upper;
+};
+
+console.log(capitalizeAllLetters(['stePhaniE', 'MitcHelL']));
+```
