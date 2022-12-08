@@ -35,7 +35,7 @@ const capitalizeAllLetters = (array) => {
 console.log(capitalizeAllLetters(['stePhaniE', 'MitcHelL']));
 ```
 
-## Problem 3
+## Problem 3 - Recursion
 
 ```js
 function factorial(x) {
@@ -50,4 +50,24 @@ function factorial(x) {
   return result;
 }
 console.log(factorial(4));
+```
+
+## Problem 4 - Recursion0
+
+```js
+function collectStrings(obj) {
+  if ((obj = {})) return -1;
+
+  let arr = [];
+
+  for (let key in obj) {
+    if (typeof obj[key] === 'string') {
+      arr.push(obj[key]);
+    }
+  }
+  return arr;
+}
+console.log(
+  collectStrings({ a: 'foo', b: null, c: 2, d: 'bar', e: true, f: 'baz' })
+);
 ```
