@@ -71,3 +71,24 @@ console.log(
   collectStrings({ a: 'foo', b: null, c: 2, d: 'bar', e: true, f: 'baz' })
 );
 ```
+
+## Problem 4 - Bubble Sort
+
+```js
+const sortedByAge = (arr) => {
+  map1 = data.age;
+
+  for (let i = arr.length - 1; i > 0; i--) {
+    for (let j = 0; j < i; j++) {
+      if (arr[j] > arr[j + 1]) {
+        let temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+  return arr.reverse();
+};
+//console.log(sortedByAge(data,age))
+console.log(map1);
+```
